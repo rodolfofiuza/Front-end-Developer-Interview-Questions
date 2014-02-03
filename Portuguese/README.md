@@ -140,7 +140,7 @@ $(".foo div#bar:eq(0)")
 79. Quais são suas técnicas favoritas para troca de imagens e quais dela você usa.
 80. CSS Hacks, arquivo condicional .css, ou... alguma outra coisa?
 81. Como você desenvolve sua página para browsers com recursos limitados?
-  * Quais técnicas/processos você usa?
+   Quais técnicas/processos você usa?
 82. Quais são as diferentes formas de visualizar conteúdo escondido (e como fazer para deixar eles disponíveis apenas para leitores de tela?)
 83. VoCê já utilizou algum sistema de grid, se sim, qual você prefere?
 84. Você já utilizou ou implementou media queries ou css's específicos para mobile?
