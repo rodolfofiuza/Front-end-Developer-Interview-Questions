@@ -90,7 +90,12 @@ var person = new Person()
 
 
 ```javascript
-var foo = "Hello"; (function() { var bar = " World"; alert(foo + bar); })(); alert(foo + bar);
+var foo = "Hello"; 
+
+(function() { 
+	var bar = " World"; 
+	alert(foo + bar); })(); 
+alert(foo + bar);
 ```
 60. Questão: Qual o retorno destes dois alerts?
 
