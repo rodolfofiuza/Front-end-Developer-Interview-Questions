@@ -25,51 +25,30 @@ A maioria das perguntas foi retirada de uma _thread_ da [oksoclap](http://oksocl
 * [@darcy](http://twitter.com/darcy) - http://darcyclarke.me
 * [@iansym](http://twitter.com)
 
-### Questões gerais:
 
-* O que você aprendeu ontem ou esta semana?
+
+### Questões para prova escrita
+
 * O que te excita ou te interessa em programação/codificação?
 * Fale sobre seu ambiente de desenvolvimento preferido. (SO, Editor, Browser, Ferramentas, etc)
 * Descreva seu trabalho quando cria uma página web.
 * Descreva a diferença entre _progressive enhancement_ and _graceful degradation_.
-  * Bônus se descrever ou mencionar detecção de recursos.
 * Explique o que significa "HTML Semântico".
 * Como você pode otimizar os recursos de um site?
-  * À procura de uma série de soluções que possam incluir:
-    * Concatenação de arquivo
-    * "Minificação" de arquivo
-    * Utilização de CDN
-    * Caching
-    * etc.
 * Por que é melhor servir recursos de um site de múltiplos domínios?
 * Quantos recursos um navegador pode baixar, simultaneamente, a partir de um determinado domínio?
 * Fale 3 formas de diminuir o _page load_ (tempo de carregamento real e percebido)
-* Se você caísse em um projeto que as pessoas usam _tabs_ para identação e você usa espaços, o que você faria?
-  * Sugerir que o projeto utilize algo como EditorConfig (http://editorconfig.org)
-  * Se conformar com as convenções (ficar consistente)
-  * `issue :retab! command`
-* Escreva uma página simples de _slideshow_
-  * Bônus se não usar JS.
 * Quais ferramentas você usa para testar a performance do seu código?
-  * Profiler, JSPerf, Dromaeo
 * Se você pudesse dominar uma tecnologia deste ano, qual seria?
 * Explique a importância de normas e órgãos normativos.
-* O que é FOUC? Como você evita FOUC?
-
-### Questões específicas de HTML:
-
+*O que é FOUC? Como você evita FOUC?
 * O que um `doctype` faz?
 * Qual a diferença entre _standards mode_ e _quirks mode_?
 * Quais as limitações quando utilizamos páginas XHTML?
-  * Existe algum problema em utilizar páginas como `application/xhtml+xml`?
-* Como você desenvolve uma página com conteúdo em múltiplos idiomas?
-  * Que tipo de coisas que você deve tomar cuidado ao desenvolver um website multi-língua?
+* Existe algum problema em utilizar páginas como `application/xhtml+xml`?
 * Quais são os benefícios em utilizar o atributo `data-`?
 * Considere o HTML5 como uma plataforma web aberta. Quais são os blocos de construção de HTML5?
 * Descreva a diferença entre cookies, sessionStorage e localStorage.
-
-### Questões específicas de JS:
-
 * Explique o evento _delegation_.
 * Explique como `this` funciona em JavaScript.
 * Explique como funciona herança prototipada.
@@ -78,11 +57,8 @@ A maioria das perguntas foi retirada de uma _thread_ da [oksoclap](http://oksocl
 * O que é um _hashtable_?
 * O que são as variáveis `undefined` e `undeclared`?
 * O que é uma _closure_, e como/por que você usaria uma?
-  * Seu padrão favorito é utilizado por ele? Argyle (Apenas aplicáveis para IIFEs)
 * Qual o caso de uso típico para funções anônimas?
 * Explique o padrão "JavaScript module pattern" e quando você o usaria.
-  * Bônus por mencionar _namespaces_ limpos.
-  * E se seus módulos são namespace-less?
 * Como você organiza seu código? (module pattern, herança clássica?)
 * Qual a diferença entre objetos herdados e objetos nativos?
 * Qual a diferença entre:
@@ -98,12 +74,11 @@ var person = new Person()
 * Quando você otimiza seu código?
 * Você pode explicar como funciona a herença no Javascript?
 * Quando você deve usar o `document.write()`?
-  * A maioria dos anúncios de publicidade ainda utilizam `document.write()` embora seu uso não seja recomendado.
 * Qual a diferença entre feature detection, feature inference, e o uso de UA string?
 * Explique o que é AJAX mais detalhadamente possível.
 * Explique como o JSONP funciona (e como ele realmente não é AJAX).
 * Você já utilizou templates com Javascript?
-  * Se sim, quais bibliotecas foram utilizadas? (Mustache.js, Handlebars etc.)
+* Se sim, quais bibliotecas foram utilizadas? 
 * Explique o que é "hoisting".
 * Descreva o que é event bubbling.
 * Qual a diferença entre atributo e propriedade?
@@ -122,8 +97,7 @@ var person = new Person()
 
 * Descreva a estratégia para memoization (evitar a repetição de cálculo) no JavaScript.
 * O que é um operador ternário, o que a palavra "ternário" indica/significa?
-* O que a aridade de uma função?
-O que é o `"use strict";`? Quais a vantagens e desvantagens de sua utilização?
+* O que é o `"use strict";`? Quais a vantagens e desvantagens de sua utilização?
 
 ### Exemplos de códigos JavaScript:
 
@@ -132,8 +106,6 @@ O que é o `"use strict";`? Quais a vantagens e desvantagens de sua utilização
 ```
 
 Questão: Qual é o valor a ser retornado?
-
-**Resposta: 3**
 
 ```javascript
 "sou uma lasanha".split("").reverse().join("");
@@ -148,16 +120,12 @@ Questão: Qual é o valor a ser retornado?
 ```
 Questão: Qual é o valor de `window.foo`?
 
-**Resposta: "bar"**
-
-Apenas se window.foo for falso, se não ele vai retornar o seu valor próprio.
 
 ```javascript
 var foo = "Hello"; (function() { var bar = " World"; alert(foo + bar); })(); alert(foo + bar);
 ```
 Questão: Qual o retorno destes dois alerts?
 
-**Resposta: "Olá Mundo" & ReferenceError: bar is not defined**
 
 ```javascript
 var foo = [];
@@ -167,7 +135,6 @@ foo.push(2);
 
 Questão: Qual o valor de `foo.length`?
 
-**Resposta: `2`**
 
 ```javascript
 var foo = {};
@@ -175,8 +142,6 @@ foo.bar = 'hello';
 ```
 
 Questão: Qual o valor de `foo.length`?
-
-**Resposta: `undefined`**
 
 ### Questões específicas de jQuery:
 
@@ -197,8 +162,6 @@ $(".foo div#bar:eq(0)")
 ```
 * Qual a diferença entre 'delegate()' e 'live()'?
 
-
-### Questões específicas de CSS
 * Descreva o que é o arquivo "reset" do css e o que ele faz e como ele é útil.
 * Descreva o que são floats e como eles funcionam.
 * Quais são as várias técnicas para "clearing" e quais delas são apropriadas para qual contexto?
@@ -214,14 +177,14 @@ $(".foo div#bar:eq(0)")
 * Como você optimiza suas páginas para impressão?
 * Quais são algumas técnicas para escrever um eficiente CSS?
 * Você já utilizou pré-processadores css? (SASS, Compass, Stylus, LESS)
-  * Se sim, descreva o que você gostou e o que não gostou com eles.
 * Como você implementaria um website que não utilizaria fontes padrões nos computadores?
-  * Webfonts (Serviços como: Google Webfonts, Typekit etc.)
 * Explique como um browser determina quais os elementos que correspondem a um seletor CSS.
-
-### Questões divertidas opcionais:
-
 * Qual a coisa mais legal que você desenvolveu, qual você ficou mais orgulhoso?
 * Quais suas partes favoritas sobre as ferramentas de desenvolvimento que você usa?
 * Você teve algum projeto para animais de estimação? Qual tipo?
 * Qual sua feature favorita do Internet Explorer?
+
+### Prova prática
+* Escreva uma página simples de _slideshow_
+
+
